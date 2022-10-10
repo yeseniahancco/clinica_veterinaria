@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">-->
+
+    <title>Clinica Vet</title>
+    <script src="https://kit.fontawesome.com/b69c9b219c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</script>    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa0-lD1r6Qab2dGEvmfCO_sjU6GJDIqyM&sensor=false"></script>
+
+   
+
+</head>
+<body>
+    <!--header - menu-->
+    <header>
+       
+        <div class="container-fluid">
+            <nav class="navbar nav-pills navbar-expand-md navbar-light bg-light border-1 border-bottom border-primary m-0"></nav>
+        </div>
+        <div class="header-content">
+            <div class="justify-content-md-center">
+                <img src="imagenes/clinicavet.jfif" alt="clinica" class="navbar-brand" width="80px">
+            </div>
+            
+            <div class="logo">
+                <h1>Clinica<b>Vet</b></h1>
+            </div>
+
+            <div class="menu" id="show-menu" >
+            
+                <nav>
+                
+                    <ul>
+                        <li><a href="index.html"> <i class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li><a href="nosotros.html"> <i class="fa-solid fa-user"></i>Nosotros</a></li>
+                        <li><a href="nosotros.html"> <i class="fa-solid fa-user"></i>Accesorios </a></li>
+                        <li class="menu-selected"><a href="bionica.html" class="text-menu-select"><i class="fa-solid fa-arrow-right"></i>bionica</a></li>
+                        <li><a href="../clinica veterinaria/Contactos.html"> <i class="fa-solid fa-phone"></i>contactos</a></li>
+                    </ul>
+                </nav>     
+            </div>
+            
+        
+
+         <!--<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="1000">
+                <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="1000">
+                <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="1000">
+                <img src="img/logo.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>-->
+        
+         <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+         </div>
+
+          <!--buscador-->
+          <div id="ctn-icon-search">
+            <i class="fas fa-search" id="icon-search"></i>
+          </div>
+
+        </div>
+
+
+    </header>
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div>
+
+    <ul id="box-search">
+        <li><a href="#"><i class="fas fa-search"></i>Como encontrar nuestra fan page</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>twiter</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100076137493038"><i class="fas fa-search"></i>facebook</a></li>
+
+    </ul>
+
+    <div id="cover-ctn-search"></div>
+
+    
+
+
+    <!--portada-->
+    <div class="container-all" id="move-content">
+
+        <div class="container-cover">
+        </div>
+     <div class="container-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="oswald text-uppercase font-weight-bold my-4">¡Envíanos un mensaje!</h1>
+                <form method="post" action="" id="form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="sede">Sede</label>
+                        <select class="form-control" id="sede" name="id_sede">
+                            <option value="1">Sede Puno</option>
+                            <option value="2">Sede Juliaca</option>
+                            <option value="3">Sede Moho</option>
+                            <option value="4">Sede San Antonio de Putina</option>
+                            <option value="5">Sede Junin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" class="form-control" id="message" rows="8" cols="50"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LdnAbwfAAAAAGlyaw3Yhs0seT8lB26ajbi6a37I"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdnAbwfAAAAAGlyaw3Yhs0seT8lB26ajbi6a37I&amp;co=aHR0cHM6Ly93d3cuY2xpbmljYXZldGVyaW5hcmlhcGFuY2hvY2F2ZXJvLmNvbTo0NDM.&amp;hl=en&amp;v=vP4jQKq0YJFzU6e21-BGy3GP&amp;size=normal&amp;cb=jrigzat276tj" width="304" height="78" role="presentation" name="a-t4iqrmnses11" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-info">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-dark text-white p-3">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <h4 class="text-uppercase oswald">Sede Puno</h4>
+                            <p class="mb-0">Av. Dezza 351, Puno</p>
+                            <p class="mb-0">Atención: Lunes a Domingo - 8 a.m. - 10 p.m.</p>
+                            <p class="mb-0">998 195 193</p>
+                            <p>01 446 6179 | 01 637 5132</p>
+                        </li>
+                        <li>
+                            <h4 class="text-uppercase oswald">Sede Juliaca</h4>
+                            <p class="mb-0">Av. Militar 2026, juliaca</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                            <p class="mb-0">936 283 095</p>
+                            <p>01 517 6681</p>
+                        </li>
+                        <li>
+                            <h4 class="text-uppercase oswald">Sede Moho</h4>
+                            <p class="mb-0">Av. San Luis 2845, Moho</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                            <p class="mb-0">992 125 188</p>
+                            <p>01 635 2172</p>
+                        </li>
+                        <li>
+                            <h4 class="text-uppercase oswald">Sede San Antonio de Putina</h4>
+                            <p class="mb-0">Av. Las Palmeras 5351, Putina</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                            <p class="mb-0">920 385 123</p>
+                            <p>01 769 0605</p>
+                        </li>
+                        <li>
+                            <h4 class="text-uppercase oswald">Sede Junin</h4>
+                            <p class="mb-0">Av. Pedro Miotta 620, Junin</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                            <p class="mb-0">932 008 081</p>
+                            <p class="mb-0">01 656 6104 | 01 656 6264 | 01 656 6491</p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-aside">
+            <aside>
+                <img src="imagenes/spa.jpg" alt="">
+                <h2>PERRUQUERIA</h2>
+                <p>El cuidado de nuestras mascotas puede ser muy importante para su salud y se recomienda 
+                    bañar a su perro aproximadamente una vez al mes. Algunos perros pueden necesitar 
+                    bañarse más a menudo, pero tenga en cuenta que lavarlos demasiado puede eliminar 
+                    los aceites naturales que los perros producen para mantener sanas piel y capa. 
+                    Esto puede hacer que su piel se vuelva seca y escamosa.</p>
+            <a href="documentos/spa.pdf"><button>mas informacion</button></a>
+            </aside>
+
+            <aside>
+                <img src="imagenes/alimentacion.jpg" alt="">
+                <h2>ALIMENTACION</h2>
+                <p>En el reino animal, los perros y gatos pertenecen a la clase de los carnívoros, 
+                    por lo tanto, sus dietas deben ser ricas en proteína y menos carbohidratos, 
+                    frutas y verduras. Ellos pueden comer carne cruda, desde que sea de origen 
+                    fiable con calidad comprobada. Y para las demás mascotas buscar su dieta balanceada.</p>
+            <a href="documentos/alimentos.pdf" ><button>mas informacion</button></a>
+            </aside>
+
+            <aside>
+                <img src="imagenes/salud.jpg" alt="">
+                <h2>SALUD</h2>
+                <p>Las mascotas pueden disminuir el estrés y la sensación de soledad, mejorar la 
+                    salud del corazón e, incluso, ayudar a los niños con sus habilidades emocionales 
+                    y sociales. Así lo asegura el NIH (National Institutes of Health), grupo de 
+                    instituciones del gobierno de Estados Unidos dedicado a la investigación médica. </p>
+            <a href="documentos/veter. salud.pdf" ><button>mas informacion</button></a>
+            </aside>
+        </div>
+
+     </div>
+     <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="imagenes/clinicavet.jfif" alt="">
+            </div>
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/profile.php?id=100076137493038"><i class="fa-brands fa-facebook-f icon-redes-footer" ></i></a>
+                <a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+                <h4>doctor mascota - todos los derechos reservados</h4>
+        </footer>
+
+     </div>
+
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
