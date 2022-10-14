@@ -270,7 +270,7 @@ article img{
     background: #fff;
     z-index: 8;
     overflow: hidden;
-    display: block;
+    display: none;
 }
 
 #box-search li a{ 
@@ -306,7 +306,7 @@ article img{
 .container-footer{
     width: 100%;
     padding: 40px 0;
-    background: burlywood;
+    background: rgb(235, 190, 133);
     margin-top: 40px;
 }
 .container-footer footer{
@@ -327,7 +327,7 @@ article img{
 .container-footer footer .redes-footer .icon-redes-footer{
     font-size: 20px;
     margin: 20px;
-    background-color: gray;
+    background-color: rgb(170, 146, 146);
     width: 50px;
     height: 50px;
     display: flex;

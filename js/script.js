@@ -25,6 +25,9 @@ function mostrar_buscador(){
     bars_search.style.top = "80px";
     cover_ctn_search.style.display = "block";
     inputSearch.focus();
+    if(inputSearch,value === ""){
+        box_search.style.display="none"
+    }
 
 }
 
